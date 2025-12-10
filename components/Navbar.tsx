@@ -2,11 +2,13 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Cpu, Gamepad2, Mail, Languages } from "lucide-react";
+import { Cpu, Gamepad2, Mail, Languages, Palette } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { useTheme } from "@/context/ThemeContext";
+
 export default function Navbar() {
   const { t, toggleLanguage, language } = useLanguage();
-
+  const { toggleTheme, isInverted } = useTheme();
   const navItems = [
     { name: t.nav.projects, href: "#projects", icon: Gamepad2 },
     { name: t.nav.contact, href: "#contact", icon: Mail },
@@ -62,6 +64,19 @@ export default function Navbar() {
         >
           <Languages size={14} />
           {language.toUpperCase()} {/* Muestra "ES" o "EN" */}
+        </button>
+
+        {/* BOTÓN 2: TEMA (SWITCH DE COLOR) */}
+        <button
+          onClick={toggleTheme}
+          className={`p-2 rounded-full transition-all duration-300 ${
+            isInverted
+              ? "bg-accent text-black shadow-[0_0_10px_var(--color-accent)]" // Estilo cuando está activo (Brilla)
+              : "bg-white/5 text-gray-300 hover:text-white"
+          }`}
+          title="Cambiar Colores"
+        >
+          <Palette size={16} />
         </button>
       </div>
     </motion.nav>

@@ -60,3 +60,10 @@ html {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.theme-swap {
+  --color-accent: #bb86fc;
+  --color-accent-glow: #bb86fc80;
+
+  --color-secondary: #ccff00;
+}

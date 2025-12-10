@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Background from "@/components/Background";
 import ScrollFix from "@/components/ScrollFix";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 export const metadata: Metadata = {
   title: {
@@ -62,13 +63,15 @@ export default function RootLayout({
     <html lang="es">
       <body className="antialiased">
         <LanguageProvider>
-          {" "}
-          <ScrollFix />
-          <Background />
-          <Navbar />
-          <main className="pt-24 px-4 min-h-screen flex flex-col relative z-10">
-            {children}
-          </main>
+          <ThemeProvider>
+            {" "}
+            <ScrollFix />
+            <Background />
+            <Navbar />
+            <main className="pt-24 px-4 min-h-screen flex flex-col relative z-10">
+              {children}
+            </main>
+          </ThemeProvider>
         </LanguageProvider>
       </body>
     </html>
