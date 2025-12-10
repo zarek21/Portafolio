@@ -2,7 +2,6 @@
 
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
-// 1. EL DICCIONARIO DE TEXTOS
 const translations = {
   es: {
     nav: {
@@ -12,12 +11,12 @@ const translations = {
     hero: {
       badge: "Activo",
       title: "Desarrollador de Software Zarek Saleme",
-      // Dividimos la descripción en 3 partes para mantener la palabra "apasionado" en otro color
       desc_part1: "En el detalle está la mejora,",
       desc_highlight: "apasionado",
       desc_part2: "con la creación de experiencias inmersivas.",
       btnProjects: "VER PROYECTOS",
       btnGithub: "GITHUB",
+      btnCv: "DESCARGAR CV",
     },
     projects: {
       title: "Proyectos",
@@ -25,7 +24,6 @@ const translations = {
       code: "Código",
       demo: "Live Demo",
       viewDetails: "Ver Detalles",
-      // Descripciones de tus proyectos
       p1_desc:
         "Tezka es un platformer 2D hack n’ slash inspirado en la mitología mexica, con un enfoque en movilidad rápida, combate técnico y un sistema único de doble personaje donde el jugador alterna entre Acatl y Tepochtli para superar obstáculos y enemigos. El juego combina exploración, combate con parry, doble salto, deslizamiento y mecánicas de mundo como bloques destructibles, plataformas móviles y zonas con efectos ambientales. Desarrollado en Unity, Tezca presenta cuatro niveles temáticos, enemigos basados en criaturas prehispánicas y un estilo artístico influenciado por referencias culturales.",
       p2_desc:
@@ -36,12 +34,12 @@ const translations = {
     contact: {
       title: "¿Tienes una idea en mente?",
       subtitle: "Hagámosla realidad.",
-      // TU NUEVO TEXTO AQUÍ:
       text: "Actualmente estoy disponible para proyectos freelance y roles de desarrollo en videojuegos o web.",
       btn: "Contáctame",
       footerRights: "Todos los derechos reservados.",
       footerDev: "Desarrollado con",
-      passion: "Pasión", // <--- Agregamos esta palabra
+      passion: "Pasión",
+      btnWhatsapp: "WhatsApp",
     },
   },
   en: {
@@ -57,6 +55,7 @@ const translations = {
       desc_part2: "about creating immersive experiences.",
       btnProjects: "VIEW PROJECTS",
       btnGithub: "GITHUB",
+      btnCv: "DOWNLOAD CV",
     },
     projects: {
       title: "Featured",
@@ -74,22 +73,21 @@ const translations = {
     contact: {
       title: "Have an idea in mind?",
       subtitle: "Let's build it.",
-      // TRADUCCIÓN DE TU TEXTO:
       text: "Currently available for freelance projects and Game Dev or Web development roles.",
       btn: "Contact Me",
       footerRights: "All rights reserved.",
       footerDev: "Developed with",
       passion: "Passion",
+      btnWhatsapp: "WhatsApp",
     },
   },
 };
 
-// Tipos para TypeScript
 type Language = "es" | "en";
 type LanguageContextType = {
   language: Language;
   toggleLanguage: () => void;
-  t: typeof translations.es; // 't' tendrá la estructura de nuestros textos
+  t: typeof translations.es;
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(

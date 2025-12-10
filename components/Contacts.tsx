@@ -1,7 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, ArrowUpRight } from "lucide-react";
+import {
+  Mail,
+  Github,
+  Linkedin,
+  ArrowUpRight,
+  MessageCircle,
+} from "lucide-react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -53,6 +59,15 @@ export default function Contact() {
               size={20}
               className="group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform"
             />
+          </Link>
+
+          <Link
+            href="https://wa.me/523327940741?text=Hola%20Zarek,%20vi%20tu%20portafolio%20y%20me%20interesa%20hablar..."
+            target="_blank"
+            className="group relative px-8 py-4 rounded-full border border-white/10 bg-surface text-white font-bold text-lg hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all duration-300 flex items-center gap-2 shadow-lg"
+          >
+            <MessageCircle size={20} />
+            {t.contact.btnWhatsapp}
           </Link>
 
           {/* Botones Sociales */}

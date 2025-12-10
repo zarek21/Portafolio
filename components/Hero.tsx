@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, LayoutGrid } from "lucide-react";
+import { Github, LayoutGrid, FileText } from "lucide-react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -63,6 +63,18 @@ export default function Hero() {
           >
             {t.hero.btnGithub} <Github size={18} /> {/* <--- Variable */}
           </Link>
+
+          <a
+            href="/cv-zarek.pdf"
+            download="CV_Zarek_Saleme.pdf"
+            className="px-8 py-3 rounded-full border border-white/10 text-white font-medium text-sm hover:bg-white/10 hover:text-accent transition-all flex items-center gap-2 group"
+          >
+            {t.hero.btnCv}
+            <FileText
+              size={18}
+              className="group-hover:-translate-y-1 transition-transform"
+            />
+          </a>
         </div>
       </motion.div>
     </section>
