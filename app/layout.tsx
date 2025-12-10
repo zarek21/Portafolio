@@ -7,7 +7,7 @@ import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadata: Metadata = {
   title: {
-    default: "Zarek Saleme | Creative Developer",
+    default: "Zarek Saleme | Dev",
     template: "%s | Zarek Saleme",
   },
   description:
