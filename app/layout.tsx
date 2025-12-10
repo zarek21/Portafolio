@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zarek Saleme | Creative Developer",
+    title: "Zarek Saleme | Dev",
     description: "Portafolio de desarrollo web y videojuegos.",
     images: ["/og-image.png"],
   },
