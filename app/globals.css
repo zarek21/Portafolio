@@ -1,26 +1,62 @@
 @import "tailwindcss";
 
+@import "tailwindcss";
+
+@theme {
+  /* --- PALETA DE COLORES (Invertida) --- */
+  --color-background: #0a0a0a;
+  --color-surface: #121212;
+
+  /* AHORA EL PRINCIPAL ES EL VERDE NEÓN */
+  --color-accent: #ccff00;
+  --color-accent-glow: #ccff0080;
+
+  /* EL MORADO PASA A SER SECUNDARIO (Para el fondo) */
+  --color-secondary: #bb86fc;
+
+  --color-muted: #a1a1aa;
+
+  /* --- PATRÓN DE FONDO --- */
+  --background-image-grid: linear-gradient(
+      to right,
+      #ffffff0a 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, #ffffff0a 1px, transparent 1px);
+  --background-size-grid: 40px 40px;
+}
+
+/* ... resto del archivo igual ... */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: var(--color-background);
+  color: #ededed;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  scroll-padding-top: 100px;
+}
+
+/* Custom Scrollbar para el Modal */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #121212;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
