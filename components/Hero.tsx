@@ -4,12 +4,14 @@ import { motion } from "framer-motion";
 import { Github, LayoutGrid, FileText } from "lucide-react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
+import Scene3D from "./Scene3D";
 
 export default function Hero() {
   const { t } = useLanguage();
 
   return (
     <section className="relative min-h-[80vh] flex flex-col justify-center items-center text-center overflow-hidden">
+      <Scene3D />
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

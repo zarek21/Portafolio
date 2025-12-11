@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import Preloader from "@/components/Preloader";
 import PixelCursor from "@/components/PixelCursor";
+import RetinaOverlay from "@/components/RetinaOverlay";
 
 export const metadata: Metadata = {
   title: {
@@ -68,6 +69,7 @@ export default function RootLayout({
           <ThemeProvider>
             <Preloader />
             <PixelCursor />
+            <RetinaOverlay />
             <ScrollFix />
             <Background />
             <Navbar />

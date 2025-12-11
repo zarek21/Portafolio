@@ -1,20 +1,17 @@
 import Hero from "@/components/Hero";
-import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contacts";
-import RevealOnScroll from "@/components/RevealOnScroll";
+import Scene3D from "@/components/Scene3D";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-0 pb-0">
-      <Hero />
-      <RevealOnScroll>
-        <Projects />
-      </RevealOnScroll>
+    <>
+      <Scene3D />
 
-      <RevealOnScroll>
+      <div className="flex flex-col gap-20 pb-20">
+        <Hero /> <Projects />
         <Contact />
-      </RevealOnScroll>
-    </div>
+      </div>
+    </>
   );
 }
