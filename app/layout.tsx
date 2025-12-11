@@ -5,6 +5,8 @@ import Background from "@/components/Background";
 import ScrollFix from "@/components/ScrollFix";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { ThemeProvider } from "@/context/ThemeContext";
+import Preloader from "@/components/Preloader";
+import PixelCursor from "@/components/PixelCursor";
 
 export const metadata: Metadata = {
   title: {
@@ -64,7 +66,8 @@ export default function RootLayout({
       <body className="antialiased">
         <LanguageProvider>
           <ThemeProvider>
-            {" "}
+            <Preloader />
+            <PixelCursor />
             <ScrollFix />
             <Background />
             <Navbar />
