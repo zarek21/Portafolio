@@ -65,6 +65,20 @@ export default function Projects() {
       icon: Server,
       gradient: "from-orange-900/50 to-red-900/50",
     },
+
+    {
+      title: "Omnifood Website",
+      category: "Web Dev",
+      description: t.projects.p4_desc,
+      tags: ["JavaScript", "HTML5", "CSS3"],
+      links: {
+        demo: "https://itsomnifood.netlify.app/",
+        repo: "https://github.com/zarek21/OmniFood",
+      },
+      videoUrl: "/videos/omnifoodVid.mp4",
+      icon: Server,
+      gradient: "from-orange-900/50 to-red-900/50",
+    },
   ];
 
   const [selectedProject, setSelectedProject] = useState<

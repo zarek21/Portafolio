@@ -30,6 +30,8 @@ const translations = {
         "Desarrollé Pig Game, un juego clásico de dados implementado con JavaScript Vanilla, enfocado en practicar manipulación del DOM, control de estado y lógica de juego. El proyecto incluye interacción dinámica entre dos jugadores, gestión de turnos, animación del dado y detección automática del ganador.",
       p3_desc:
         "Sistema full-stack embebido capaz de alojar y servir un videojuego web desde un microcontrolador ESP32. Implementa una arquitectura Cliente-Servidor asíncrona para lograr interacción en tiempo real entre un botón físico (hardware) y la interfaz gráfica (software) mediante protocolos HTTP y APIs REST optimizadas.",
+      p4_desc:
+        "Omnifood es una landing page moderna y responsiva para un servicio ficticio de suscripción de comida saludable impulsado por inteligencia artificial. El sitio comunica de forma clara el valor del producto, desde la identidad de marca y la propuesta de valor hasta los planes de precios y testimonios de clientes.",
     },
     contact: {
       title: "¿Tienes una idea en mente?",
@@ -69,6 +71,8 @@ const translations = {
         "I developed Pig Game, a classic dice game implemented with Vanilla JavaScript, focused on practicing DOM manipulation, state management, and game logic. The project includes dynamic interaction between two players, turn management, dice animation, and automatic winner detection.",
       p3_desc:
         "A full-stack embedded system capable of hosting and serving a web-based video game from an ESP32 microcontroller. It implements an asynchronous client–server architecture to enable real-time interaction between a physical button (hardware) and the graphical interface (software) using HTTP protocols and optimized REST APIs.",
+      p4_desc:
+        "Omnifood is a modern, responsive landing page for a fictional AI-powered food subscription service focused on healthy eating and user convenience. The website presents a complete product narrative, from brand positioning and value proposition to pricing plans and customer testimonials.",
     },
     contact: {
       title: "Have an idea in mind?",
