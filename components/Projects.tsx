@@ -79,6 +79,20 @@ export default function Projects() {
       icon: Server,
       gradient: "from-orange-900/50 to-red-900/50",
     },
+
+    {
+      title: "El legado",
+      category: "Game Dev",
+      description: t.projects.p5_desc,
+      tags: ["Unity", "C#", "3D", "GameJam"],
+      links: {
+        demo: "https://rampas.itch.io/the-legacyy",
+        repo: null,
+      },
+      videoUrl: "/videos/Legacy.mp4",
+      icon: Server,
+      gradient: "from-orange-900/50 to-red-900/50",
+    },
   ];
 
   const [selectedProject, setSelectedProject] = useState<

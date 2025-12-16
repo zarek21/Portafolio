@@ -32,6 +32,8 @@ const translations = {
         "Sistema full-stack embebido capaz de alojar y servir un videojuego web desde un microcontrolador ESP32. Implementa una arquitectura Cliente-Servidor asíncrona para lograr interacción en tiempo real entre un botón físico (hardware) y la interfaz gráfica (software) mediante protocolos HTTP y APIs REST optimizadas.",
       p4_desc:
         "Omnifood es una landing page moderna y responsiva para un servicio ficticio de suscripción de comida saludable impulsado por inteligencia artificial. El sitio comunica de forma clara el valor del producto, desde la identidad de marca y la propuesta de valor hasta los planes de precios y testimonios de clientes.",
+      p5_desc:
+        "The Legacy es un juego inspirado en la lucha libre mexicana y en los héroes cuyas historias sobreviven al paso del tiempo. Fue desarrollado durante una game jam, enfocado en unir narrativa y mecánicas de juego dentro de un proceso creativo rápido e intenso. El jugador toma el papel de El Legado, el campeón querido de su pueblo. Por la noche, sube al ring en combates beat ’em up llenos de movimientos poderosos y el estilo clásico de la lucha libre. Durante el día, la máscara se deja a un lado y el hombre detrás del mito recorre su comunidad, conversa con su gente y vive la calma de alguien que carga con el peso de una leyenda. A través de su ciclo de día y noche, The Legacy explora la identidad, el legado y el paso del tiempo, mostrando cómo el espíritu de un héroe puede trascender más allá del ring.",
     },
     contact: {
       title: "¿Tienes una idea en mente?",
@@ -73,6 +75,8 @@ const translations = {
         "A full-stack embedded system capable of hosting and serving a web-based video game from an ESP32 microcontroller. It implements an asynchronous client–server architecture to enable real-time interaction between a physical button (hardware) and the graphical interface (software) using HTTP protocols and optimized REST APIs.",
       p4_desc:
         "Omnifood is a modern, responsive landing page for a fictional AI-powered food subscription service focused on healthy eating and user convenience. The website presents a complete product narrative, from brand positioning and value proposition to pricing plans and customer testimonials.",
+      p5_desc:
+        "The Legacy is a game inspired by Mexican wrestling and the heroes whose stories outlive them. Developed during a game jam, the project explores how gameplay and narrative can merge under tight creative constraints. You step into the boots of El Legado, the beloved champion of his hometown. By night, you enter the ring in intense beat ’em up combat, performing powerful moves infused with classic lucha libre flair. By day, the mask comes off, and you walk through the village as the man behind the legend—talking with its people and experiencing the quiet life shaped by fame and responsibility. Through its day-and-night cycle, The Legacy reflects on identity, legacy, and the passage of time, showing how a hero’s spirit can endure far beyond the ring.",
     },
     contact: {
       title: "Have an idea in mind?",
