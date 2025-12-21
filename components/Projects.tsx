@@ -93,6 +93,20 @@ export default function Projects() {
       icon: Server,
       gradient: "from-orange-900/50 to-red-900/50",
     },
+
+    {
+      title: "Archivex",
+      category: "Full Stack",
+      description: t.projects.p6_desc,
+      tags: ["Next.Js", "Supabase"],
+      links: {
+        demo: null,
+        repo: "https://github.com/zarek21/Cowork_Manager",
+      },
+      videoUrl: "/videos/Archivex.mp4",
+      icon: Server,
+      gradient: "from-orange-900/50 to-red-900/50",
+    },
   ];
 
   const [selectedProject, setSelectedProject] = useState<
