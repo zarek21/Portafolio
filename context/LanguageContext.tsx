@@ -9,7 +9,7 @@ const translations = {
       contact: "Contacto",
     },
     hero: {
-      badge: "Activo",
+      badge: "Ubicado en México",
       title: "Desarrollador de Software Zarek Saleme",
       desc_part1: "En el detalle está la mejora,",
       desc_highlight: "apasionado",
@@ -36,6 +36,8 @@ const translations = {
         "The Legacy es un juego inspirado en la lucha libre mexicana y en los héroes cuyas historias sobreviven al paso del tiempo. Fue desarrollado durante una game jam, enfocado en unir narrativa y mecánicas de juego dentro de un proceso creativo rápido e intenso. El jugador toma el papel de El Legado, el campeón querido de su pueblo. Por la noche, sube al ring en combates beat ’em up llenos de movimientos poderosos y el estilo clásico de la lucha libre. Durante el día, la máscara se deja a un lado y el hombre detrás del mito recorre su comunidad, conversa con su gente y vive la calma de alguien que carga con el peso de una leyenda. A través de su ciclo de día y noche, The Legacy explora la identidad, el legado y el paso del tiempo, mostrando cómo el espíritu de un héroe puede trascender más allá del ring.",
       p6_desc:
         "Aplicación web segura para almacenamiento y gestión de archivos enfocada en la experiencia visual. Características clave incluyen autenticación robusta, sistema de invitación a equipos, Drag & Drop con UI optimista para una respuesta instantánea, y seguridad a nivel de base de datos (RLS).",
+      p7_desc:
+        "En WHY, cada tecla presionada coloca un ladrillo. Las palabras aparecen en pantalla (memes, cultura pop, jerga, referencias de anime y caos de internet) y tienes segundos para escribirlas antes de que se acabe el tiempo. ¿Acertaste la palabra? Un nuevo piso cae sobre tu torre con un rebote satisfactorio y una nube de polvo. ¿Fallaste una letra o se te acabó el tiempo? El piso superior se derrumba y pierdes una vida.",
     },
     contact: {
       title: "¿Tienes una idea en mente?",
@@ -54,7 +56,7 @@ const translations = {
       contact: "Contact",
     },
     hero: {
-      badge: "Active",
+      badge: "Based in Mexico",
       title: "Software Developer Zarek Saleme",
       desc_part1: "Improvement lies in the details,",
       desc_highlight: "passionate",
@@ -81,6 +83,8 @@ const translations = {
         "The Legacy is a game inspired by Mexican wrestling and the heroes whose stories outlive them. Developed during a game jam, the project explores how gameplay and narrative can merge under tight creative constraints. You step into the boots of El Legado, the beloved champion of his hometown. By night, you enter the ring in intense beat ’em up combat, performing powerful moves infused with classic lucha libre flair. By day, the mask comes off, and you walk through the village as the man behind the legend—talking with its people and experiencing the quiet life shaped by fame and responsibility. Through its day-and-night cycle, The Legacy reflects on identity, legacy, and the passage of time, showing how a hero’s spirit can endure far beyond the ring.",
       p6_desc:
         "A secure web application for file storage and management with a strong focus on visual experience. Key features include robust authentication, a team invitation system, drag-and-drop uploads with an optimistic UI for instant feedback, and database-level security using Row Level Security (RLS).",
+      p7_desc:
+        "In WHY, every keystroke lays a brick. Words flash on screen — memes, pop culture, slang, anime references, and internet chaos — and you have seconds to type them before time runs out. Nail the word? A new floor slams onto your tower with a satisfying bounce and a cloud of dust. Miss a letter or run out of time? The top floor crumbles and you lose a life.",
     },
     contact: {
       title: "Have an idea in mind?",
@@ -103,7 +107,7 @@ type LanguageContextType = {
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(
-  undefined
+  undefined,
 );
 
 export function LanguageProvider({ children }: { children: ReactNode }) {

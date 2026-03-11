@@ -10,6 +10,7 @@ import PixelCursor from "@/components/PixelCursor";
 import RetinaOverlay from "@/components/RetinaOverlay";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://zarek.dev"),
   title: {
     default: "Zarek Saleme | Dev",
     template: "%s | Zarek Saleme",
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "Desarrollador Web",
     "Game Dev",
     "Unity",
+    "Unreal",
     "Next.js",
     "React",
     "Portfolio",

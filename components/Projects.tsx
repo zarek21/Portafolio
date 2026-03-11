@@ -19,6 +19,15 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "WHY",
+      category: "Game Dev",
+      description: t.projects.p7_desc,
+      tags: ["Unity", "C#", "3D", "Typing Game"],
+      links: { demo: null, repo: null },
+      videoUrl: "/videos/WhyGameVid.mp4",
+      gradient: "from-blue-900/50 to-cyan-900/50",
+    },
+    {
       title: "Tezka Game",
       category: "Game Dev",
       description: t.projects.p1_desc,
@@ -332,7 +341,7 @@ export default function Projects() {
               </div>
             )}
           </AnimatePresence>,
-          document.body // <--- AQUÍ ESTÁ LA CLAVE: Lo mandamos al body
+          document.body, // <--- AQUÍ ESTÁ LA CLAVE: Lo mandamos al body
         )}
     </section>
   );
